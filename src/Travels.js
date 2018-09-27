@@ -41,7 +41,7 @@ const Travels = () => (
 
 	{Trip.map( (yo, id) => (
 
-		<Travel destination={yo.Destination}  country={yo.country} image={yo.image} distance={yo.Distance} key={id} /> ))}
+		<Travel {...yo} key={id} /> ))}
 
 </div>
 
